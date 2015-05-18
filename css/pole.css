@@ -1,0 +1,128 @@
+/***
+version 1.2.2
+
+*/
+#pole{
+	margin: 0px;
+	height: 300px!important;
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+}
+#tabs_pole_container {
+padding-top:10px;
+padding-bottom:0!important;
+padding-right:0!important;
+padding-left:0!important;
+float: left;
+width: 486px!important;
+margin-top: 0!important;
+}
+.newpole_img {
+background-image:url("../newgrafics/pole.png");
+	background-repeat: no-repeat;
+	background-size:100%;
+	width: 173px;
+	height: 116px;
+	position: relative;
+}
+.newpole_img .text {
+text-align:center;
+top: 36px!important;
+left: 27px!important;
+	position: relative;
+	color: #fff;
+}
+.newpole_img .text_link_form{
+	top: 36px!important; 
+	left: 47px!important;
+	position: relative;
+}
+.pole_kupit{
+	background-image:url("../newgrafics/pole.png");
+}
+.pl_k{
+background-image:url("../newgrafics/pole.png");
+}
+.pole_kupite {
+    background-image: url("../newgrafics/polez_p.png");
+}
+.posadil1{
+	background-image:url("../newgrafics/psenita1.png");
+}
+
+.posadil2{
+	background-image:url("../newgrafics/cucuruza1.png");
+}
+.posadil3{
+	background-image:url("../newgrafics/iacimeni1.png");
+}
+.posadil4{
+	background-image:url("../newgrafics/svecla1.png");
+}
+.posadil5{
+	background-image:url("../newgrafics/boby1.png");
+}
+.posadil6{
+	background-image:url("../newgrafics/tikva1.png");
+}
+.udobreno1{
+	background-image:url("../newgrafics/psenita_u.png");
+}
+.udobreno2{
+	background-image:url("../newgrafics/cucuruza_u.png");
+}
+.udobreno3{
+	background-image:url("../newgrafics/iacimeni_u.png");
+}
+.udobreno4{
+	background-image:url("../newgrafics/svecla_u.png");
+}
+.udobreno5{
+	background-image:url("../newgrafics/boby_u.png");
+}
+.udobreno6{
+	background-image:url("../newgrafics/tikva_u.png");
+}
+
+.gotovo1{
+	background-image:url("../newgrafics/psenita2.png");
+}
+.gotovo2{
+	background-image:url("../newgrafics/cucuruza2.png");
+}
+.gotovo3{
+	background-image:url("../newgrafics/iacimeni2.png");
+}
+.gotovo4{
+	background-image:url("../newgrafics/svecla2.png");
+}
+.gotovo5{
+	background-image:url("../newgrafics/boby2.png");
+}
+.gotovo6{
+	background-image:url("../newgrafics/tikva2.png");
+}
+.click_div {
+position: relative;
+-moz-transform: skew(122deg,25deg);
+-webkit-transform: skew(122deg,25deg);
+-o-transform: skew(122deg,25deg);
+-ms-transform: skew(122deg,25deg);
+width: 74px;
+height: 48px;
+cursor: pointer;
+overflow: hidden;
+font-size: 1000px;
+z-index: 3;
+top: 16px;
+left: 36px;
+}
+#posev label,#udobrit label {
+	display: inline!important;
+	font-weight: normal!important;
+	margin: 5px 0!important;
+ }
+ #udobrit .answer{
+	cursor: move!important;
+ }

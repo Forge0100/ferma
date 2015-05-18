@@ -1,0 +1,36 @@
+/***
+version 1.2.2
+
+*/
+#pole{
+	margin: 10px;
+	height: 300px!important;
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+}
+#tabs_pole_container {
+padding-top:10px;
+padding-bottom:0!important;
+padding-right:0!important;
+padding-left:0!important;
+float: left;
+width: 486px!important;
+margin-top: 0!important;
+}
+
+.click_div {
+	position: relative;
+	-moz-transform: skew(122deg,25deg);
+	-webkit-transform: skew(122deg,25deg);
+	-o-transform: skew(122deg,25deg);
+	-ms-transform: skew(122deg,25deg);
+	width: 74px;
+	height: 48px;
+	cursor: pointer;
+	overflow: hidden;
+	font-size: 1000px;
+	z-index: 3;
+	top: 10px;
+	left: 49px;
+}

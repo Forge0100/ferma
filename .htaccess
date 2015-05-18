@@ -1,0 +1,171 @@
+
+DirectoryIndex index.php
+RewriteEngine On
+# Основной домен
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Главная
+RewriteRule ^index.html$ index.php [L]
+
+# faq
+RewriteRule ^faq(/?)+$ index.php?menu=faq [L]
+RewriteRule ^faq2(/?)+$ index.php?menu=faq2 [L]
+RewriteRule ^404(/?)+$ index.php?menu=404 [L]
+
+# Контакты
+RewriteRule ^contacts(/?)+$ index.php?menu=contacts [L]
+
+# Новости
+RewriteRule ^news(/?)+$ index.php?menu=news [L]
+RewriteRule ^news/([0-9]+)(/?)+$ index.php?menu=news&id=$1 [L]
+RewriteRule ^news/str/([0-9]+)(/?)+$ index.php?menu=news&str=$1 [L]
+
+# О нас
+RewriteRule ^about(/?)+$ index.php?menu=about [L]
+
+# Регистрация
+RewriteRule ^reg(/?)+$ index.php?menu=reg [L]
+
+# Восстановление пароля
+RewriteRule ^remind(/?)+$ index.php?menu=remind [L]
+
+
+# Последние выплаты
+RewriteRule ^payments(/?)+$ index.php?menu=payments [L]
+RewriteRule ^otzyvy(/?)+$ index.php?menu=otzyvy [L]
+RewriteRule ^otzyvy/str/([0-9]+)(/?)+$ index.php?menu=otzyvy&str=$1 [L]
+
+
+
+# Пользователи
+RewriteRule ^users/([0-9]+)(/?)+$ index.php?menu=users&page=$1 [L]
+RewriteRule ^users(/?)+$ index.php?menu=users [L]
+RewriteRule ^tos(/?)+$ index.php?menu=tos [L]
+
+
+# Аккаунт
+
+RewriteRule ^pole(/?)+$ index.php?menu=pole [L]
+RewriteRule ^blinaya(/?)+$ index.php?menu=blinaya [L]
+RewriteRule ^chat(/?)+$ index.php?menu=chat [L]
+RewriteRule ^account(/?)+$ index.php?menu=account [L]
+RewriteRule ^logout(/?)+$ index.php?menu=logout [L]
+RewriteRule ^lavka(/?)+$ index.php?menu=lavka [L]
+RewriteRule ^rinok(/?)+$ index.php?menu=rinok [L]
+RewriteRule ^magazin(/?)+$ index.php?menu=magazin [L]
+RewriteRule ^blinaya(/?)+$ index.php?menu=blinaya [L]
+RewriteRule ^fabrika(/?)+$ index.php?menu=fabrika [L]
+RewriteRule ^history(/?)+$ index.php?menu=history [L]
+RewriteRule ^history/str/([0-9]+)(/?)+$ index.php?menu=history&str=$1 [L]
+RewriteRule ^history/type/([a-zA-Z0-9_]+)(/?)+$ index.php?menu=history&type=$1 [L]
+RewriteRule ^history/type/([a-zA-Z0-9_]+)/str/([0-9]+)(/?)+$ index.php?menu=history&type=$1&str=$2 [L]
+RewriteRule ^fabrika_blincik(/?)+$ index.php?menu=fabrika_blincik [L]
+RewriteRule ^newproduct(/?)+$ index.php?menu=newproduct [L]
+RewriteRule ^newproduct/id_kur/([0-9]+)(/?)+$ index.php?menu=newproduct&id=$1 [L]
+RewriteRule ^exchange(/?)+$ index.php?menu=exchange [L]
+
+RewriteRule ^svin(/?)+$ index.php?menu=svin [L]
+RewriteRule ^svin/id_svin/([0-9]+)(/?)+$ index.php?menu=svin&id=$1 [L]
+
+RewriteRule ^ovta(/?)+$ index.php?menu=ovta [L]
+RewriteRule ^ovta/id_ovta/([0-9]+)(/?)+$ index.php?menu=ovta&id=$1 [L]
+
+RewriteRule ^korova(/?)+$ index.php?menu=korova [L]
+RewriteRule ^korova/id_karova/([0-9]+)(/?)+$ index.php?menu=korova&id=$1 [L]
+
+RewriteRule ^lama(/?)+$ index.php?menu=lama [L]
+RewriteRule ^lama/id_lama/([0-9]+)(/?)+$ index.php?menu=lama&id=$1 [L]
+
+RewriteRule ^slon(/?)+$ index.php?menu=slon [L]
+RewriteRule ^slon/id_slon/([0-9]+)(/?)+$ index.php?menu=slon&id=$1 [L]
+RewriteRule ^support(/?)+$ index.php?menu=support [L]
+RewriteRule ^support/add(/?)+$ index.php?menu=support&add [L]
+RewriteRule ^support/view(/?)+$ index.php?menu=support&view [L]
+RewriteRule ^support/id/([0-9]+)(/?)+$ index.php?menu=support&id=$1 [L]
+
+RewriteRule ^profile(/?)+$ index.php?menu=profile [L]
+RewriteRule ^online(/?)+$ index.php?menu=online [L]
+RewriteRule ^perevod(/?)+$ index.php?menu=perevod [L]
+RewriteRule ^convert(/?)+$ index.php?menu=convert [L]
+RewriteRule ^vivod(/?)+$ index.php?menu=vivod [L]
+RewriteRule ^popoln(/?)+$ index.php?menu=popoln [L]
+RewriteRule ^bonus(/?)+$ index.php?menu=bonus [L]
+RewriteRule ^bonus/add(/?)+$ index.php?menu=bonus&add [L]
+RewriteRule ^plat_pass(/?)+$ index.php?menu=plat_pass [L]
+RewriteRule ^re_pass(/?)+$ index.php?menu=re_pass [L]
+RewriteRule ^sclad(/?)+$ index.php?menu=sclad [L]
+RewriteRule ^error_login(/?)+$ index.php?menu=error_login [L]
+RewriteRule ^referals(/?)+$ index.php?menu=ref [L]
+RewriteRule ^reflink(/?)+$ index.php?menu=reflink [L]
+RewriteRule ^wall(/?)+$ index.php?menu=wall [L]
+RewriteRule ^statistics(/?)+$ index.php?menu=statistics [L]
+RewriteRule ^action(/?)+$ index.php?menu=action [L]
+RewriteRule ^gifts(/?)+$ index.php?menu=gifts [L]
+RewriteRule ^gifts/my(/?)+$ index.php?menu=gifts&my [L]
+RewriteRule ^gifts/add/([0-9]+)(/?)+$ index.php?menu=gifts&add=$1 [L]
+RewriteRule ^wall/edit(/?)+$ index.php?menu=wall&edit [L]
+RewriteRule ^wall/myfriends(/?)+$ index.php?menu=wall&myfriends [L]
+RewriteRule ^wall/friendsrequest(/?)+$ index.php?menu=wall&friendsrequest [L]
+RewriteRule ^wall/friendsrequest/addfrend/([0-9]+)(/?)+$ index.php?menu=wall&friendsrequest&addfrend=$1 [L]
+RewriteRule ^wall/friendsrequest/nofrend/([0-9]+)(/?)+$ index.php?menu=wall&friendsrequest&nofrend=$1 [L]
+RewriteRule ^wall/user/([0-9]+)(/?)+$ index.php?menu=wall&id=$1 [L]
+RewriteRule ^wall/frendadd/([0-9]+)(/?)+$ index.php?menu=wall&fadd=$1 [L]
+RewriteRule ^pm(/?)+$ index.php?menu=pm [L]
+RewriteRule ^pm/in(/?)+$ index.php?menu=pm&in [L]
+RewriteRule ^pm/to/([0-9a-zA-Z]+)(/?)+$ index.php?menu=pm&to=$1 [L]
+RewriteRule ^pm/out(/?)+$ index.php?menu=pm&out [L]
+RewriteRule ^pm/viewin/([0-9]+)(/?)+$ index.php?menu=pm&viewin=$1 [L]
+RewriteRule ^pm/viewout/([0-9]+)(/?)+$ index.php?menu=pm&viewout=$1 [L]
+RewriteRule ^chat(/?)+$ index.php?menu=chat [L]
+RewriteRule ^top100(/?)+$ index.php?menu=top100 [L]
+RewriteRule ^poslednie_vyplaty(/?)+$ index.php?menu=poslednie_vyplaty [L]
+RewriteRule ^profile/mail_act/([0-9]+)(/?)+$ index.php?menu=profile&mail_act=$1 [L]
+
+RewriteRule ^adminka/exchange(/?)+$ adminka/index.php?menu=exchange [L]
+RewriteRule ^adminka/exchange/add(/?)+$ adminka/index.php?menu=exchange&add [L]
+RewriteRule ^adminka/login(/?)+$ adminka/index.php?menu=login [L]
+RewriteRule ^adminka/stats(/?)+$ adminka/index.php?menu=stats [L]
+RewriteRule ^adminka/price_by(/?)+$ adminka/index.php?menu=price_by [L]
+RewriteRule ^adminka/price_sell(/?)+$ adminka/index.php?menu=price_sell [L]
+RewriteRule ^adminka/set_site(/?)+$ adminka/index.php?menu=set_site [L]
+RewriteRule ^adminka/users(/?)+$ adminka/index.php?menu=users [L]
+RewriteRule ^adminka/users/str/([0-9]+)(/?)+$ adminka/index.php?menu=users&str=$1 [L]
+RewriteRule ^adminka/users/read/([0-9]+)(/?)+$ adminka/index.php?menu=users&read=$1 [L]
+RewriteRule ^adminka/users/dell/([0-9]+)(/?)+$ adminka/index.php?menu=users&dell=$1 [L]
+RewriteRule ^adminka/price_lavka(/?)+$ adminka/index.php?menu=price_lavka [L]
+RewriteRule ^adminka/time(/?)+$ adminka/index.php?menu=time [L]
+RewriteRule ^adminka/news(/?)+$ adminka/index.php?menu=news [L]
+RewriteRule ^adminka/news/read/([0-9]+)(/?)+$ adminka/index.php?menu=news&read=$1 [L]
+RewriteRule ^adminka/news/dell/([0-9]+)(/?)+$ adminka/index.php?menu=news&dell=$1 [L]
+RewriteRule ^adminka/news/add(/?)+$ adminka/index.php?menu=news&add [L]
+
+RewriteRule ^adminka/action(/?)+$ adminka/index.php?menu=action [L]
+RewriteRule ^adminka/action/read/([0-9]+)(/?)+$ adminka/index.php?menu=action&read=$1 [L]
+RewriteRule ^adminka/action/dell/([0-9]+)(/?)+$ adminka/index.php?menu=action&dell=$1 [L]
+RewriteRule ^adminka/action/add(/?)+$ adminka/index.php?menu=action&add [L]
+
+RewriteRule ^adminka/gifts(/?)+$ adminka/index.php?menu=gifts [L]
+RewriteRule ^adminka/exit(/?)+$ adminka/index.php?menu=exit [L]
+RewriteRule ^adminka/plat(/?)+$ adminka/index.php?menu=plat [L]
+RewriteRule ^adminka/page(/?)+$ adminka/index.php?menu=page [L]
+RewriteRule ^adminka/stat_enter(/?)+$ adminka/index.php?menu=stat_enter [L]
+RewriteRule ^adminka/stat_vivod(/?)+$ adminka/index.php?menu=stat_vivod [L]
+RewriteRule ^adminka/stat_pop(/?)+$ adminka/index.php?menu=stat_pop [L]
+RewriteRule ^adminka/stat_pop/str/([0-9]+)(/?)+$ adminka/index.php?menu=stat_pop&str=$1 [L]
+RewriteRule ^adminka/vivod(/?)+$ adminka/index.php?menu=vivod [L]
+RewriteRule ^adminka/energy(/?)+$ adminka/index.php?menu=energy [L]
+RewriteRule ^adminka/support(/?)+$ adminka/index.php?menu=support [L]
+RewriteRule ^adminka/support/id/([0-9]+)(/?)+$ adminka/index.php?menu=support&id=$1 [L]
+RewriteRule ^adminka/vivod/read/([0-9]+)(/?)+$ adminka/index.php?menu=vivod&read=$1 [L]
+RewriteRule ^adminka/vivod/dell/([0-9]+)(/?)+$ adminka/index.php?menu=vivod&dell=$1 [L]
+RewriteRule ^adminka/vivod/str/([0-9]+)(/?)+$ adminka/index.php?menu=vivod&str=$1 [L]
+RewriteRule ^adminka/stat_enter/str/([0-9]+)(/?)+$ adminka/index.php?menu=stat_enter&str=$1 [L]
+RewriteRule ^adminka/stat_vivod/str/([0-9]+)(/?)+$ adminka/index.php?menu=stat_vivod&str=$1 [L]
+RewriteRule ^adminka/page/read/([0-9]+)(/?)+$ adminka/index.php?menu=page&read=$1 [L]
+RewriteRule ^adminka/gifts/dell/([0-9]+)(/?)+$ adminka/index.php?menu=gifts&dell=$1 [L]
+#RewriteRule ^adminka/pay_stats(/?)+$ adminka/index.php?menu=pay_stats [L]
+
+RewriteRule ^adminka/pay_stats(/?)+$ adminka/index.php?menu=pay_stats [L]
+RewriteRule ^success_query(/?)+$ index.php?menu=success_query [L]
+RewriteRule ^fail_query(/?)+$ index.php?menu=fail_query [L]
